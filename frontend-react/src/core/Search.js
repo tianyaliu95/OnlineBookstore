@@ -53,23 +53,23 @@ const Search = () => {
 
     const searchMessage = (searched, results) => {
         if (searched && results.length > 0) {
-            return `Found ${results.length} products`;
+            return `Found ${results.length} products for "${search}"`;
         }
         if (searched && results.length < 1) {
-            return `Sorry, no books were found`;
+            return `No results for "${search}"`;
         }
     };
 
     const searchedProducts = (results = []) => {
         return (
             <div>
-                <h2 className="mt-4 mb-4 ml-1">
+                <h4 className="mt-4 mb-4 mx-4">
                     {searchMessage(searched, results)}
-                </h2>
+                </h4>
 
-                <div className="row">
+                <div className="row mx-2">
                     {results.map((product, i) => (
-                        <div className="col-4 mb-3 ml-1">
+                        <div className="col-3 mb-3">
                             <Card key={i} product={product} />
                         </div>
                     ))}

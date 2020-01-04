@@ -27,7 +27,7 @@ exports.signin = (req, res) => {
     User.findOne({ email }, (err, user) => {
         if (err || !user) {
             return res.status(400).json({
-                error: 'User with that email does not exist. Please signup'
+                error: 'User does not exist. Please sign up.'
             });
         }
         // if user is found make sure the email and password match
@@ -72,7 +72,7 @@ exports.isAuth = (req, res, next) => {
 exports.isAdmin = (req, res, next) => {
     if (req.profile.role === 0) {
         return res.status(403).json({
-            error: 'Admin resourse! Access denied'
+            error: 'Admin resourse. Access denied'
         });
     }
     next();

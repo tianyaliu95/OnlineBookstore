@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth";
-// import { itemTotal } from "./cartHelpers";
+import { itemTotal } from "./cartHelpers";
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) {
@@ -13,7 +13,7 @@ const isActive = (history, path) => {
 
 const Menu = ({ history }) => (
     <div>
-        <ul className="nav nav-tabs bg-secondary">
+        <ul className="nav nav-tabs bg-secondary px-3">
             <li className="nav-item">
                 <Link
                     className="nav-link"
@@ -33,19 +33,6 @@ const Menu = ({ history }) => (
                     Shop
                 </Link>
             </li>
-
-{/*            <li className="nav-item">
-                <Link
-                    className="nav-link"
-                    style={isActive(history, "/cart")}
-                    to="/cart"
-                >
-                    Cart{" "}
-                    <sup>
-                        <small className="cart-badge">{itemTotal()}</small>
-                    </sup>
-                </Link>
-            </li>*/}
 
             {isAuthenticated() && isAuthenticated().user.role === 0 && (
                 <li className="nav-item">
@@ -71,9 +58,10 @@ const Menu = ({ history }) => (
                 </li>
             )}
 
+
             {!isAuthenticated() && (
                 <Fragment>
-                    <li className="nav-item">
+                    <li className="nav-item ml-auto">
                         <Link
                             className="nav-link"
                             style={isActive(history, "/signin")}
@@ -96,7 +84,7 @@ const Menu = ({ history }) => (
             )}
 
             {isAuthenticated() && (
-                <li className="nav-item">
+                <li className="nav-item ml-auto">
                     <span
                         className="nav-link"
                         style={{ cursor: "pointer", color: "#ffffff" }}
@@ -110,6 +98,19 @@ const Menu = ({ history }) => (
                     </span>
                 </li>
             )}
+
+            <li className="nav-item">
+                <Link
+                    className="nav-link"
+                    style={isActive(history, "/cart")}
+                    to="/cart"
+                >
+                    Cart{" "}
+                    <sup>
+                        <small className="cart-badge">{itemTotal()}</small>
+                    </sup>
+                </Link>
+            </li>
         </ul>
     </div>
 );

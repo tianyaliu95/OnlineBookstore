@@ -12,7 +12,7 @@ const Checkbox = ({ categories, handleFilters }) => {
         if (currentCategoryId === -1) {
             newCheckedCategoryId.push(c);
         } else {
-            newCheckedCategoryId.splice(currentCategoryId, 1);  //take out of the array
+            newCheckedCategoryId.splice(currentCategoryId, 1);
         }
         // console.log(newCheckedCategoryId);
         setCheked(newCheckedCategoryId);

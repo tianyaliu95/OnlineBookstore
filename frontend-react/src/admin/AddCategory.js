@@ -63,12 +63,12 @@ const AddCategory = () => {
 
     const goBack = () => (
         <div className="mt-5">
-            <button type="button" className="btn btn-secondary">
-                <Link to="/admin/dashboard" className="text-white">
+            <Link to="/admin/dashboard" className="text-white">
+                <button type="button" className="btn btn-secondary">
                     Back to Dashboard
-                </Link>
-            </button>
-            
+                </button>
+            </Link>
+
         </div>
     );
 

@@ -98,7 +98,7 @@ const Shop = () => {
 
     return (
         <Layout
-            title="Shop Page"
+            title="Taomazon Online Bookstore"
             description="Search and find books of your choice!"
             className="container-fluid"
         >

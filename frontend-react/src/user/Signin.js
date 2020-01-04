@@ -58,7 +58,7 @@ const Signin = () => {
                 />
             </div>
             <button onClick={clickSubmit} className="btn btn-primary">
-                Submit
+                Sign In
             </button>
         </form>
     );
@@ -94,8 +94,8 @@ const Signin = () => {
 
     return (
         <Layout
-            title="Signin"
-            description="Signin to Node React E-commerce App"
+            title="Welcome Back!"
+            description="Sign in to Taomazon Online Bookstore"
             className="container col-md-8 offset-md-2"
         >
             {showLoading()}

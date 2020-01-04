@@ -56,20 +56,20 @@ const Search = () => {
             return `Found ${results.length} products`;
         }
         if (searched && results.length < 1) {
-            return `No products found`;
+            return `Sorry, no books were found`;
         }
     };
 
     const searchedProducts = (results = []) => {
         return (
             <div>
-                <h2 className="mt-4 mb-4">
+                <h2 className="mt-4 mb-4 ml-1">
                     {searchMessage(searched, results)}
                 </h2>
 
                 <div className="row">
                     {results.map((product, i) => (
-                        <div className="col-4 mb-3">
+                        <div className="col-4 mb-3 ml-1">
                             <Card key={i} product={product} />
                         </div>
                     ))}
@@ -81,7 +81,7 @@ const Search = () => {
     const searchForm = () => (
         <form onSubmit={searchSubmit}>
             <span className="input-group-text">
-                <div className="input-group input-group-lg">
+                <div className="input-group input-group-md">
                     <div className="input-group-prepend">
                         <select
                             className="btn mr-2"
@@ -115,7 +115,7 @@ const Search = () => {
 
     return (
         <div className="row">
-            <div className="container mb-3">{searchForm()}</div>
+            <div className="container mt-2 mb-3">{searchForm()}</div>
             <div className="container-fluid mb-3">
                 {searchedProducts(results)}
             </div>

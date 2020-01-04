@@ -2,7 +2,10 @@
  * border radius
  */
 
-.btn,
+.btn {
+    border-radius: 6px;
+}
+
 .jumbotron,
 .nav :hover {
     border-radius: 0px;
@@ -23,9 +26,26 @@
  */
 
 .name {
-    background: indigo;
-    color: #fff;
+    background: whitesmoke;
+    /*color: #fff;*/
     font-weight: bold;
+}
+
+/*price tag*/
+.price {
+    font-size: 1.2rem;
+    color: #ff8000;
+}
+
+/*card on hover*/
+.card-hover :hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+/*moment time*/
+.moment {
+    font-size: 0.8rem;
 }
 
 /* black shade form 10-1 */
@@ -53,12 +73,20 @@
  */
 
 .product-img {
-    min-height: 100px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
 }
 
 .jumbotron h2 {
     margin-top: -20px;
+    margin-left: 20px;
 }
+
+.jumbotron p {
+    margin-left: 22px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .jumbotron h2 {

@@ -99,12 +99,12 @@ const Shop = () => {
     return (
         <Layout
             title="Shop Page"
-            description="Search and find books of your choice"
+            description="Search and find books of your choice!"
             className="container-fluid"
         >
-            <div className="row">
+            <div className="row mx-2">
                 <div className="col-4">
-                    <h4>Filter by categories</h4>
+                    <h4>Filter by Categories</h4>
                     <ul>
                         <Checkbox
                             categories={categories}
@@ -114,7 +114,7 @@ const Shop = () => {
                         />
                     </ul>
 
-                    <h4>Filter by price range</h4>
+                    <h4>Filter by Price Range</h4>
                     <div>
                         <RadioBox
                             prices={prices}

@@ -240,6 +240,7 @@ exports.photo = (req, res, next) => {
     next();
 };
 
+//for search bar
 exports.listSearch = (req, res) => {
     // create query object to hold search value and category value
     const query = {};

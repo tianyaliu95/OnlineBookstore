@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import ShowImage from './ShowImage';
-// import moment from 'moment';
+import moment from 'moment';
 // import { addItem, updateItem, removeItem } from './cartHelpers';
 
 const Card = ({
@@ -47,13 +47,13 @@ const Card = ({
   //   );
   // };
 
-  // const showStock = quantity => {
-  //   return quantity > 0 ? (
-  //     <span className="badge badge-primary badge-pill">In Stock </span>
-  //   ) : (
-  //     <span className="badge badge-primary badge-pill">Out of Stock </span>
-  //   );
-  // };
+  const showStock = quantity => {
+    return quantity > 0 ? (
+      <span className="badge badge-primary badge-pill">In Stock </span>
+    ) : (
+      <span className="badge badge-primary badge-pill">Out of Stock </span>
+    );
+  };
 
   // const handleChange = productId => event => {
   //   setRun(!run); // run useEffect in parent Cart
@@ -94,20 +94,27 @@ const Card = ({
   // };
   return (
     <div className="card">
-      <div className="card-header card-header-1 ">{product.name}</div>
+      <div className="card-header card-header-1 name text-capitalize">{product.name}</div>
       <div className="card-body">
 {/*        {shouldRedirect(redirect)}*/}
-        <ShowImage item={product} url="product" />
-        <p className="card-p  mt-2">{product.description.substring(0, 100)} </p>
-        <p className="card-p black-10">$ {product.price}</p>
-        <p className="black-9">Category: {product.category && product.category.name}</p>
-{/*        <p className="black-8">Added on {moment(product.createdAt).fromNow()}</p>
+
+        <Link to={`/product/${product._id}`} className="mr-2 card-hover">
+          <ShowImage item={product} url="product" />
+        </Link>
+        
+        <p className="card-p  mt-2">{product.description.substring(0, 80)} </p>
+        <div className="card-p mt-2">
+          <div className="mt-2 font-weight-bold price">${product.price}</div>
+          <div className="mt-2">Category: {product.category && product.category.name}</div>
+          <div className="mt-2 mb-3 moment">Added {moment(product.createdAt).fromNow()}</div>
+        </div>
+        
         {showStock(product.quantity)}
         <br />
 
         {showViewButton(showViewProductButton)}
 
-        {showAddToCartBtn(showAddToCartButton)}
+{/*        {showAddToCartBtn(showAddToCartButton)}
 
         {showRemoveButton(showRemoveProductButton)}
 

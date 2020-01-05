@@ -1,7 +1,11 @@
 # MERN based Full-stack Web Application 
 <strong>Taomazon</strong> - An online bookstore that allows students to search and purchase textbooks.
-<a href="http://178.128.230.220/">Click me to try the demo</a>
-<a href="https://drive.google.com/drive/folders/1qYGd12CtLGcdN1vylNeVgkmnj1FLKMml?usp=sharing">Click me for demo screenshot</a>
+<div>
+	<a href="https://drive.google.com/drive/folders/1qYGd12CtLGcdN1vylNeVgkmnj1FLKMml?usp=sharing">Click me for demo screenshot</a>
+</div>
+<div>
+	<a href="http://178.128.230.220/">Click me to try it out!</a>
+</div>
 
 Supported features include: 
 <ul>

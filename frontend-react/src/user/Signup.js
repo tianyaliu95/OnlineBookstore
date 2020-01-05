@@ -75,7 +75,7 @@ const Signup = () => {
         <Layout
             title="Sign Up"
             description="Sign up to Taomazon Online Bookstore"
-            className="container col-md-8 offset-md-2"
+            className="container col-md-8 offset-md-2 height-full"
         >
             {showSuccess()}
             {showError()}

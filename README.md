@@ -6,6 +6,7 @@
 <div>
 	<a href="http://178.128.230.220/">Click me to try it out!</a>
 </div>
+<hr />
 
 Supported features include: 
 <ul>

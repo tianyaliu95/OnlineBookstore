@@ -77,7 +77,7 @@ const AddCategory = () => {
             title="Add a new category"
             description={`Hi ${user.name}, please add a new category`}
         >
-            <div className="row">
+            <div className="row height-full">
                 <div className="col-md-8 offset-md-2">
                     {showSuccess()}
                     {showError()}

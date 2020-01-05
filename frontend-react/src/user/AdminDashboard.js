@@ -59,7 +59,7 @@ const AdminDashboard = () => {
             description={`Hi ${name}!`}
             className="container-fluid"
         >
-            <div className="row">
+            <div className="row height-full">
                 <div className="col-3">{adminLinks()}</div>
                 <div className="col-9">{adminInfo()}</div>
             </div>

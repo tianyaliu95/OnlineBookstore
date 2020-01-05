@@ -39,7 +39,7 @@ const Orders = () => {
     const showOrdersLength = () => {
         if (orders.length > 0) {
             return (
-                <h1 className="text-danger display-2">
+                <h1 className="text-danger">
                     Total orders: {orders.length}
                 </h1>
             );
@@ -99,7 +99,7 @@ const Orders = () => {
             }, manage orders here`}
             className="container-fluid"
         >
-            <div className="row">
+            <div className="row ">
                 <div className="col-md-8 offset-md-2">
                     {showOrdersLength()}
 
@@ -108,7 +108,7 @@ const Orders = () => {
                             <div
                                 className="mt-5"
                                 key={oIndex}
-                                style={{ borderBottom: "5px solid indigo" }}
+                                style={{ borderBottom: "5px solid whitesmoke" }}
                             >
                                 <h2 className="mb-5">
                                     <span className="bg-primary">
@@ -149,7 +149,7 @@ const Orders = () => {
                                         key={pIndex}
                                         style={{
                                             padding: "20px",
-                                            border: "1px solid indigo"
+                                            border: "1px solid dark"
                                         }}
                                     >
                                         {showInput("Product name", p.name)}

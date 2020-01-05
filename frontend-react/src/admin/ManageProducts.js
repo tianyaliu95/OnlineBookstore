@@ -52,17 +52,19 @@ const ManageProducts = () => {
                                 className="list-group-item d-flex align-items-center"
                             >
                                 <strong>{p.name}</strong>
-                                <Link className="ml-auto mr-4" to={`/admin/product/update/${p._id}`}>
+                                <Link className="ml-auto" to={`/admin/product/update/${p._id}`}>
                                     <span className="badge badge-warning badge-pill">
                                         Update
                                     </span>
                                 </Link>
-                                <span
-                                    onClick={() => destroy(p._id)}
-                                    className="badge badge-danger badge-pill mr-5"
-                                >
-                                    Delete
-                                </span>
+                                <Link className="ml-2 mr-4" to="/admin/products">
+                                    <span
+                                        onClick={() => destroy(p._id)}
+                                        className="badge badge-danger badge-pill"
+                                    >
+                                        Delete
+                                    </span>
+                                </Link>
                             </li>
                         ))}
                     </ul>

@@ -125,8 +125,27 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
         <div onBlur={() => setData({ ...data, error: '' })}>
             {data.clientToken !== null && products.length > 0 ? (
                 <div className="mr-4">
+                    
                     <div className="gorm-group mb-4 mt-4">
-                        <label className="text-muted">Shipping Address:</label>
+                        <label>Full Name:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder=""
+                        />
+                    </div>
+
+                    <div className="gorm-group mb-4 mt-3">
+                        <label>Contact Number:</label>
+                        <input
+                            type="tel"
+                            className="form-control"
+                            placeholder=""
+                        />
+                    </div>
+
+                    <div className="gorm-group mb-4 mt-3">
+                        <label>Shipping Address:</label>
                         <textarea
                             onChange={handleAddress}
                             className="form-control"

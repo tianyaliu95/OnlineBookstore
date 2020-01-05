@@ -104,7 +104,7 @@ const Dashboard = () => {
             description={`Hi ${name}!`}
             className="container-fluid"
         >
-            <div className="row">
+            <div className="row height-full">
                 <div className="col-3">{userLinks()}</div>
                 <div className="col-9">
                     {userInfo()}

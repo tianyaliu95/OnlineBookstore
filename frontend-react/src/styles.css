@@ -142,3 +142,8 @@
         background-position: 0% 50%;
     }
 }
+
+/*footer*/
+.height-full {
+  height: 100vh;
+}

@@ -21,6 +21,7 @@ Supported features include:
 	<li>View all orders placed by users (Admin)</li>
 	<li>Admin dashboard (Admin)</li>
 	<li>User dashboard (Registered users)</li>
+	<li>...</li>
 </ul>
 
 

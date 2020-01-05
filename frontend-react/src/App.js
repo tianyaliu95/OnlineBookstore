@@ -1,5 +1,5 @@
-import React from 'react';
+// import React from 'react';
 
-const App = () => (<div>Hello from react</div>)
+// const App = () => (<div>Hello from react</div>)
 
-export default App;
+// export default App;

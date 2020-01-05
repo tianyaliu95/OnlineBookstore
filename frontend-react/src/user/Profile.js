@@ -85,7 +85,7 @@ const Profile = ({ match }) => {
         <Layout 
             title="Profile" 
             description="Update your profile" 
-            className="container col-md-8 offset-md-2">
+            className="container col-md-8 offset-md-2 height-full">
                 {profileUpdate(name, email, password)}
                 {redirectUser(success)}
         </Layout>

@@ -102,7 +102,7 @@ const Shop = () => {
             description="Search and find books of your choice!"
             className="container-fluid"
         >
-            <div className="row mx-2">
+            <div className="row mx-2 mt-5">
                 <div className="col-4">
                     <h4>Filter by Categories</h4>
                     <ul>

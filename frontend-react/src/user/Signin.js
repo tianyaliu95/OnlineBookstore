@@ -5,8 +5,8 @@ import { signin, authenticate, isAuthenticated } from "../auth";
 
 const Signin = () => {
     const [values, setValues] = useState({
-        email: "t293liu@uwaterloo.ca",
-        password: "aaa123",
+        email: "",
+        password: "",
         error: "",
         loading: false,
         redirectToReferrer: false	//set to true when signed in and redirect to home page

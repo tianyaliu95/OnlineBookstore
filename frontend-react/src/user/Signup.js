@@ -73,7 +73,7 @@ const Signup = () => {
 
     return (
         <Layout
-            title="Sign Up"
+            title="Welcome to Taomazon!"
             description="Sign up to Taomazon Online Bookstore"
             className="container col-md-8 offset-md-2 height-full"
         >

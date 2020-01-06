@@ -24,6 +24,8 @@ Supported features include:
 	<li>. . .</li>
 </ul>
 
+<img src="https://github.com/tianyaliu95/OnlineBookstore/blob/master/overview/MERN.JPG" alt="">
+
 <b>Frontend:</b> React, CSS, Bootstrap
 <ul>
 	<li></li>

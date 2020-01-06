@@ -24,6 +24,14 @@ Supported features include:
 	<li>. . .</li>
 </ul>
 
+<b>Frontend:</b> React, CSS, Bootstrap
+<ul>
+	<li></li>
+</ul>
 
+<b>Backend:</b> NodeJS, Express
+<ul>
+	<li></li>
+</ul>
 
 

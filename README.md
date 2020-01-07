@@ -8,12 +8,12 @@
 </div>
 <hr />
 
-Supported features include: 
+<b>Supported features include: </b>
 <ul>
 	<li>"New Arrivals" and "Best Sellers" sections</li>
 	<li>Search textbooks based on names</li>
 	<li>Filter textbooks based on categories and price range</li>
-	<li>Show suggestions based on category while viewing product information</li>
+	<li>Show recommandations based on category while viewing product information</li>
 	<li>Add/remove/change quantity in cart</li>
 	<li>Check out using credit card or PayPal</li>
 	<li>Role based route access (Registered users & Admin)</li>
@@ -23,15 +23,17 @@ Supported features include:
 	<li>User dashboard (Registered users)</li>
 	<li>. . .</li>
 </ul>
+<hr />
 
+Overall structure for this project:
 <img src="https://github.com/tianyaliu95/OnlineBookstore/blob/master/overview/MERN.JPG" alt="">
 
-<b>Frontend:</b> React, CSS, Bootstrap
+<b>Frontend:</b>
 <ul>
 	<li></li>
 </ul>
 
-<b>Backend:</b> NodeJS, Express
+<b>Backend:</b>
 <ul>
 	<li></li>
 </ul>

@@ -4,7 +4,7 @@
 	<a href="https://drive.google.com/drive/folders/1qYGd12CtLGcdN1vylNeVgkmnj1FLKMml?usp=sharing">Click me for demo screenshot</a>
 </div>
 <div>
-	<a href="http://178.128.230.220/">Click me to try it out!</a>
+	<a href="http://tianyabookstore.com">Click me to try it out!</a>
 </div>
 <hr />
 

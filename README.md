@@ -28,7 +28,7 @@
 Overall structure for this project:
 <img src="https://github.com/tianyaliu95/OnlineBookstore/blob/master/overview/MERN.JPG" alt="">
 
-<b>Frontend:</b>
+<!-- <b>Frontend:</b>
 <ul>
 	<li></li>
 </ul>
@@ -36,6 +36,6 @@ Overall structure for this project:
 <b>Backend:</b>
 <ul>
 	<li></li>
-</ul>
+</ul> -->
 
 

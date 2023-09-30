@@ -1,5 +1,5 @@
 # MERN based Full-stack Web Application 
-<strong>Taomazon</strong> - An online bookstore that allows students to search and purchase textbooks.
+<strong>Taobuy</strong> - An online bookstore that allows students to search and purchase textbooks.
 <div>
 	<a href="https://drive.google.com/drive/folders/1qYGd12CtLGcdN1vylNeVgkmnj1FLKMml?usp=sharing">Click me for demo screenshot</a>
 </div>
